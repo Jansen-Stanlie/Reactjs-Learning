@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import YouTubeComp from "../../component/YouTubeComp/YouTubeComp";
 import Product from "../Product/Product";
 import LifeCycleCop from "../LifeCycleComp/LifeCycleCop";
+import BlogPost from "../BlogPost/BlogPost";
 class Home extends Component {
 	constructor(props) {
 		super(props);
@@ -51,6 +52,9 @@ class Home extends Component {
 				<p>Life Cycle componen</p>
 				<hr />
 				{this.state.showComponent ? <LifeCycleCop /> : null}
+				<hr />
+				<p>Blog Post Test</p>
+				<BlogPost/>
 			</Fragment>
 		);
 	}
